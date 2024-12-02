@@ -123,13 +123,13 @@ const GlowingCircle = styled.div`
   z-index: -1;
 
   @media (max-width: 1024px) {
-    width: 340px;
-    height: 340px;
+    width: 420px;
+    height: 420px;
   }
 
   @media (max-width: 768px) {
-    width: 260px;
-    height: 260px;
+    width: 320px;
+    height: 320px;
   }
 
   @media (max-width: 480px) {
@@ -147,18 +147,18 @@ const Ring = styled.div`
   animation: ${rotate} 6s linear infinite;
 
   @media (max-width: 1024px) {
+    width: 420px;
+    height: 420px;
+  }
+
+  @media (max-width: 768px) {
     width: 320px;
     height: 320px;
   }
 
-  @media (max-width: 768px) {
-    width: 240px;
-    height: 240px;
-  }
-
   @media (max-width: 480px) {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
   }
 `;
 
@@ -171,18 +171,18 @@ const ProfilePic = styled.img`
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
   @media (max-width: 1024px) {
-    width: 240px;
-    height: 240px;
+    width: 420px;
+    height: 420px;
   }
 
   @media (max-width: 768px) {
-    width: 180px;
-    height: 180px;
+    width: 420px;
+    height: 320px;
   }
 
   @media (max-width: 480px) {
-    width: 140px;
-    height: 140px;
+    width: 240px;
+    height: 240px;
   }
 `;
 
