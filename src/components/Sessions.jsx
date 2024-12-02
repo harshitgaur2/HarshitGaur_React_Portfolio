@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import session1pic from '/Users/harshitgaur/Desktop/harshitgaur/src/assets/session1pic.png';
-import session2pic from '/Users/harshitgaur/Desktop/harshitgaur/src/assets/session2pic.png';
-import session3pic from '/Users/harshitgaur/Desktop/harshitgaur/src/assets/session3pic.png';
-import session4pic from '/Users/harshitgaur/Desktop/harshitgaur/src/assets/session4pic.png';
-import session5pic from '/Users/harshitgaur/Desktop/harshitgaur/src/assets/session5pic.png';
+import session1pic from '../assets/session1pic.png';
+import session2pic from '../assets/session2pic.png';
+import session3pic from '../assets/session3pic.png';
+import session4pic from '../assets/session4pic.png';
+import session5pic from '../assets/session5pic.png';
 
 const session1_desc = 'Google Cloud Facilitator Session happened on the 12th of May at Bharati Vidyapeeths College of Engineering, New Delhi. Google Cloud Facilitator program is organised to train students on industry-ready cloud skills and other IT skills like DevOps, Machine Learning, App Deployment, etc.Two keynotes were conducted in the session:Keynote 1:  Introduction to Google Cloud Facilitator Program and hands-on labs on CloudSkillBoost | Harshit GaurKeynote 2: Expert Talk on applications of Google Cloud and OpenCV. Computer Vision on Demand using Google Cloud | Dr. Srishti VashishthaDr. Srishti Vashishtha and Harshit Gaur are Google Cloud Facilitators for BVP Delhi Campus for the 2022 program. They are experts in Google Cloud and have been trained to teach other students.'
 

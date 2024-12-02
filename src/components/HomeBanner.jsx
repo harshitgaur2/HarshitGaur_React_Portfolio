@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
-import harshit_profile from '/Users/harshitgaur/Desktop/harshitgaur/src/assets/harshit_bnq.png';
+import harshit_profile from '../assets/harshit_bnq.png';
 
 
 
