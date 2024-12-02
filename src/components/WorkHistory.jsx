@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const WorkHistory = () => {
   const jobs = [
-    { title: 'Data Science and Analytics Associate', company: 'Publicis Sapient', duration: '2022- Present', description: 'Worked as a data science associate' },
-    { title: 'Data Science Intern', company: 'Ezapp Solutions US', duration: '2021 - 2022', description: 'Worked on various data analysis projects' },
+    { title: 'Data Science and Analytics Associate', company: 'Publicis Sapient', duration: '2022- Present', description: 'Contributed to different AI&ML accelerated projects across different clients spanning from different verticles like FMCG, Automobile, Energy and Commodities. Provided actionalbe insights and performance analytics using Adobe Analytics. Leveraged Adobe Target and Adobe RTCDP for personalisation. Used PowerBI and Tableau to curate reports and dashboards. Created LLMs and used SQL and Python for advanced data processing.' },
+    { title: 'Data Science Intern', company: 'Ezapp Solutions US', duration: '2021 - 2022', description: 'Worked on various data analysis projects. Implemented time series forecasting, flipping models and created data pipelines for house prediction agencies in regions across the USA.' },
   ];
 
   return (

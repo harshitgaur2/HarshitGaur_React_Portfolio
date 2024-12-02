@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
 import harshit_profile from '../assets/harshit_bnq.png';
-
+import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 
 // Keyframes for the glowing animation
@@ -73,7 +73,7 @@ const HomeBanner = () => {
 <CTA
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
-  href="https://www.youtube.com/@harshitgaur2898"
+  href="https://forms.gle/FQcEYFQDZoLhvqH99"
   target="_blank"
 >
 <LogoIcon viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -81,6 +81,40 @@ const HomeBanner = () => {
     </LogoIcon>
   Click to Book Session
 </CTA>
+<SocialIcons>
+          <SocialIcon
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://linkedin.com/in/harshitgaur2"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </SocialIcon>
+          <SocialIcon
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://twitter.com/@TheHarshitGaur"
+            target="_blank"
+          >
+            <FaTwitter />
+          </SocialIcon>
+          <SocialIcon
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://github.com/harshitgaur2"
+            target="_blank"
+          >
+            <FaGithub />
+          </SocialIcon>
+          <SocialIcon
+            whileHover={{ scale: 1.2, rotate: 10 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://wa.me/+919582705290"
+            target="_blank"
+          >
+            <FaWhatsapp />
+          </SocialIcon>
+        </SocialIcons>
       </TextContent>
     </Banner>
   );
@@ -277,3 +311,24 @@ const LogoIcon = styled.svg`
   vertical-align: middle;
 `;
 
+const SocialIcons = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: left;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+`;
+
+// Individual Social Icon
+const SocialIcon = styled(motion.a)`
+  font-size: 2rem;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--cta-hover-color, #007bff);
+  }
+`;

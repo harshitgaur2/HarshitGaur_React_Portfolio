@@ -22,6 +22,8 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
         <StyledLink to="/projects" onClick={() => setMenuOpen(false)}>Projects</StyledLink>
         <StyledLink to="/sessions" onClick={() => setMenuOpen(false)}>Sessions</StyledLink>
         <StyledLink to="/cv" onClick={() => setMenuOpen(false)}>Download CV</StyledLink>
+        <StyledLink to="/research" onClick={() => setMenuOpen(false)}>Research</StyledLink>
+        <StyledLink to="/achievements" onClick={() => setMenuOpen(false)}>Achievements</StyledLink>
       </NavLinks>
       <Toggle onClick={toggleTheme}>
         {isDarkMode ? <FiSun /> : <FiMoon />}

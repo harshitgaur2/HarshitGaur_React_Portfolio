@@ -1,19 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import shecare from '../assets/project1.png';
+import rag from '../assets/rag.png';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Project A',
-      description: 'Description of project A',
-      image: '/path/to/projectAimage.jpg',
-      link: 'https://link-to-project-a.com',
+      title: 'SheCares: Early Age Fuzzy Based Expert System for Detection of Breast Cancer',
+      description: 'Project developed using Fuzzy Logics to design an expert system for detecting malignancy in the breast cancer sample. GUI developed as a windows installer using python tikinter platform and MATLAB is extended as the inference engine.',
+      image: shecare,
+      link: 'https://github.com/harshitgaur2/SheCare-Breast-Cancer-Detection-Using-Fuzzy-Logic-Expert-System',
     },
     {
-      title: 'Project B',
-      description: 'Description of project B',
-      image: '/path/to/projectBimage.jpg',
-      link: 'https://link-to-project-b.com',
+      title: 'Retrieval Augmented Generative (RAG) for custom document QnA usng Chainlit and Weaviate',
+      description: 'An implementation of Retrieval Augmented Generation model using Haystack and Weviate for vector embedding and creating the application using chainlit framework. Implemented the chat interface and document storage mechanism.',
+      image: rag,
+      link: 'https://github.com/harshitgaur2/RAG_LLM_Haystack_Chainlit',
     },
     // More projects can be added here...
   ];
@@ -102,18 +104,32 @@ const ProjectDescription = styled.p`
 
 const ProjectLink = styled.a`
   display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: var(--cta-color);
-  color: white;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--cta-color, #3E00DBFF); /* Fallback to blue if variable is undefined */
+  color: var(--cta-text-color, #fff); /* Fallback to white if variable is undefined */
   text-align: center;
   text-decoration: none;
   border-radius: 8px;
-  width: 100%;
-  box-sizing: border-box;
-  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: var(--cta-hover-color);
+    background-color: var(--cta-hover-color, #0056b3); /* Fallback to darker blue */
+    color: var(--cta-hover-text-color, #fff); /* Ensure text is visible on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(0); /* Reset transform for active state */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    width: auto; /* Adjust width for smaller screens */
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
 `;
-

@@ -7,6 +7,8 @@ import WorkHistory from './components/WorkHistory';
 import Projects from './components/Projects';
 import Sessions from './components/Sessions';
 import CV from './components/CV';
+import Research from './components/Research';
+import Achievements from './components/Achievements';
 
 // Define light and dark themes
 const lightTheme = {
@@ -59,6 +61,8 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/sessions" element={<Sessions />} />
             <Route path="/cv" element={<CV />} />
+            <Route path="/research" element={<Research />} />
+            <Route path="/achievements" element={<Achievements />} />
           </Routes>
         </Main>
       </Router>
