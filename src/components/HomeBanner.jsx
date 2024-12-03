@@ -5,6 +5,19 @@ import harshit_profile from '../assets/harshit_bnq.png';
 import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 
+const glow2 = keyframes`
+  0% {
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.8), 0 0 30px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+`;
+
+
 // Keyframes for the glowing animation
 const glow = keyframes`
   0% {
@@ -58,18 +71,10 @@ const HomeBanner = () => {
         >
           A passionate data scientist eager to transform data into actionable insights and develop innovative solutions.
         </Summary>
-        <CTA
-  whileHover={{ scale: 1.1 }}
-  whileTap={{ scale: 0.9 }}
-  href="https://www.youtube.com/@harshitgaur2898"
-  target="_blank"
->
-  <LogoIcon viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M21.8,8.001c-0.24-0.91-0.96-1.63-1.88-1.87C17.93,6,12,6,12,6s-5.93,0-7.92,0.13c-0.92,0.24-1.64,0.96-1.88,1.87 C2,10,2,12.001,2,12.001s0,2.001,0.2,4.001c0.24,0.91,0.96,1.63,1.88,1.87C6.07,18,12,18,12,18s5.93,0,7.92-0.13 c0.92-0.24,1.64-0.96,1.88-1.87C22,14,22,12.001,22,12.001S22,10,21.8,8.001z M10,15.001v-6l5,3L10,15.001z" />
-  </LogoIcon>
-  Watch My YouTube
-</CTA>
-<br></br>
+
+        
+
+
 <CTA
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
@@ -81,6 +86,18 @@ const HomeBanner = () => {
     </LogoIcon>
   Click to Book Session
 </CTA>
+<br></br>
+<GlowingCTA
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+  href="https://www.youtube.com/@harshitgaur2898"
+  target="_blank"
+>
+  <LogoIcon viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.8,8.001c-0.24-0.91-0.96-1.63-1.88-1.87C17.93,6,12,6,12,6s-5.93,0-7.92,0.13c-0.92,0.24-1.64,0.96-1.88,1.87 C2,10,2,12.001,2,12.001s0,2.001,0.2,4.001c0.24,0.91,0.96,1.63,1.88,1.87C6.07,18,12,18,12,18s5.93,0,7.92-0.13 c0.92-0.24,1.64-0.96,1.88-1.87C22,14,22,12.001,22,12.001S22,10,21.8,8.001z M10,15.001v-6l5,3L10,15.001z" />
+  </LogoIcon>
+  Watch My YouTube
+</GlowingCTA>
 <SocialIcons>
           <SocialIcon
             whileHover={{ scale: 1.2, rotate: 10 }}
@@ -123,6 +140,9 @@ const HomeBanner = () => {
 export default HomeBanner;
 
 // Styled Components
+
+
+
 const Banner = styled(motion.section)`
   display: flex;
   align-items: center;
@@ -302,6 +322,20 @@ const CTA = styled(motion.a)`
     padding: 0.5rem 1rem;
   }
 `;
+
+
+
+const GlowingCTA = styled(CTA)`
+  position: relative;
+  background: linear-gradient(45deg,red);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 20, 147, 0.7);
+  animation: ${glow2} 2s infinite;
+
+  &:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 1), 0 0 40px rgba(255, 20, 147, 1);
+  }
+`;
+
 
 const LogoIcon = styled.svg`
   width: 20px;
