@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const CV = () => {
   const googleDrivePreviewLink =
-    'https://drive.google.com/file/d/1i90ZgADfacG2p0YhLE_0MxtHeSGggNJB/preview'; // Google Drive Preview URL
+    'https://drive.google.com/file/d/15CkRCQ9DIPj3lVEdMa9SZDayjYgjOCO4/preview'; // Google Drive Preview URL
   const googleDriveDownloadLink =
-    'https://drive.google.com/uc?export=download&id=1i90ZgADfacG2p0YhLE_0MxtHeSGggNJB'; // Google Drive Download URL
+    'https://drive.google.com/uc?export=download&id=15CkRCQ9DIPj3lVEdMa9SZDayjYgjOCO4'; // Google Drive Download URL
 
   return (
     <CVContainer>
